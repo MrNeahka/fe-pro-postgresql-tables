@@ -96,7 +96,7 @@ describe('SQL', () => {
   it('book cant create without existing values', async () => {
     try {
       await client.query(
-        `INSERT INTO books(title, userid, authorid, categoryid) VALUES ('book', 10, 10, 10);`
+        `INSERT INTO books(title, userid, authorid, categoryid) VALUES ('book', 2, 2, 2);`
       );
     } catch (error) {
       expect(error.message).toStrictEqual(
